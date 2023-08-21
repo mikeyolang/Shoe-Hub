@@ -1,0 +1,94 @@
+{
+  "kidShoes": [
+    {
+      "id": 1,
+      "name": "Sparkle Sneakers",
+      "category": "Sneakers",
+      "size": "US 5",
+      "color": "Pink",
+      "price": 29.99,
+      "image": "assets/images/sparkle_sneakers.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Adventure Sandals",
+      "category": "Sandals",
+      "size": "US 6",
+      "color": "Blue",
+      "price": 19.99,
+      "image": "assets/images/adventure_sandals.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Light-Up Trainers",
+      "category": "Sneakers",
+      "size": "US 4",
+      "color": "White",
+      "price": 39.99,
+      "image": "assets/images/light_up_trainers.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rainbow Slip-Ons",
+      "category": "Slip-Ons",
+      "size": "US 7",
+      "color": "Multicolor",
+      "price": 24.99,
+      "image": "assets/images/rainbow_slip_ons.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sporty Velcro Shoes",
+      "category": "Athletic",
+      "size": "US 5",
+      "color": "Black",
+      "price": 34.99,
+      "image": "assets/images/sporty_velcro_shoes.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Floral Mary Janes",
+      "category": "Flats",
+      "size": "US 8",
+      "color": "Pink",
+      "price": 27.99,
+      "image": "assets/images/floral_mary_janes.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Dino Print Boots",
+      "category": "Boots",
+      "size": "US 7",
+      "color": "Green",
+      "price": 32.99,
+      "image": "assets/images/dino_print_boots.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Glow-in-the-Dark High-Tops",
+      "category": "Sneakers",
+      "size": "US 6",
+      "color": "Black",
+      "price": 42.99,
+      "image": "assets/images/glow_in_the_dark_high_tops.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Rainy Day Galoshes",
+      "category": "Rain Boots",
+      "size": "US 4",
+      "color": "Yellow",
+      "price": 21.99,
+      "image": "assets/images/rainy_day_galoshes.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Comfy Slipper Socks",
+      "category": "Slippers",
+      "size": "US 3",
+      "color": "Purple",
+      "price": 14.99,
+      "image": "assets/images/comfy_slipper_socks.jpg"
+    }
+  ]
+}

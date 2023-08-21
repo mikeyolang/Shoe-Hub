@@ -1,0 +1,94 @@
+{
+  "menShoes": [
+    {
+      "id": 1,
+      "name": "Classic Leather Oxfords",
+      "category": "Formal",
+      "size": "US 9",
+      "color": "Black",
+      "price": 79.99,
+      "image": "assets/images/classic_leather_oxfords.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Casual Canvas Sneakers",
+      "category": "Casual",
+      "size": "US 10",
+      "color": "Navy",
+      "price": 49.99,
+      "image": "assets/images/casual_canvas_sneakers.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Running Performance Shoes",
+      "category": "Athletic",
+      "size": "US 11",
+      "color": "Gray",
+      "price": 89.99,
+      "image": "assets/images/running_performance_shoes.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Suede Desert Boots",
+      "category": "Boots",
+      "size": "US 9",
+      "color": "Brown",
+      "price": 64.99,
+      "image": "assets/images/suede_desert_boots.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Slip-On Loafers",
+      "category": "Casual",
+      "size": "US 10",
+      "color": "Tan",
+      "price": 54.99,
+      "image": "assets/images/slip_on_loafers.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hiking Boots",
+      "category": "Outdoor",
+      "size": "US 10",
+      "color": "Black",
+      "price": 74.99,
+      "image": "assets/images/hiking_boots.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Leather High-Tops",
+      "category": "Casual",
+      "size": "US 11",
+      "color": "White",
+      "price": 69.99,
+      "image": "assets/images/leather_high_tops.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Formal Wingtip Brogues",
+      "category": "Formal",
+      "size": "US 9",
+      "color": "Brown",
+      "price": 84.99,
+      "image": "assets/images/formal_wingtip_brogues.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Business Penny Loafers",
+      "category": "Formal",
+      "size": "US 10",
+      "color": "Black",
+      "price": 94.99,
+      "image": "assets/images/business_penny_loafers.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Urban Street Sneakers",
+      "category": "Casual",
+      "size": "US 11",
+      "color": "Red",
+      "price": 59.99,
+      "image": "assets/images/urban_street_sneakers.jpg"
+    }
+  ]
+}

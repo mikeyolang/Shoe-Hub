@@ -1,0 +1,94 @@
+{
+  "womenShoes": [
+    {
+      "id": 1,
+      "name": "Elegant Heeled Sandals",
+      "category": "Formal",
+      "size": "US 7",
+      "color": "Silver",
+      "price": 89.99,
+      "image": "assets/images/elegant_heeled_sandals.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Casual Slip-On Sneakers",
+      "category": "Casual",
+      "size": "US 8",
+      "color": "White",
+      "price": 54.99,
+      "image": "assets/images/casual_slip_on_sneakers.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Athletic Running Shoes",
+      "category": "Athletic",
+      "size": "US 7",
+      "color": "Pink",
+      "price": 79.99,
+      "image": "assets/images/athletic_running_shoes.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chic Ankle Boots",
+      "category": "Boots",
+      "size": "US 8",
+      "color": "Black",
+      "price": 69.99,
+      "image": "assets/images/chic_ankle_boots.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Classic Ballet Flats",
+      "category": "Flats",
+      "size": "US 7",
+      "color": "Beige",
+      "price": 39.99,
+      "image": "assets/images/classic_ballet_flats.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Outdoor Hiking Boots",
+      "category": "Outdoor",
+      "size": "US 8",
+      "color": "Brown",
+      "price": 89.99,
+      "image": "assets/images/outdoor_hiking_boots.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Platform Sneakers",
+      "category": "Casual",
+      "size": "US 7",
+      "color": "Black",
+      "price": 64.99,
+      "image": "assets/images/platform_sneakers.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Formal Pointed Pumps",
+      "category": "Formal",
+      "size": "US 8",
+      "color": "Red",
+      "price": 74.99,
+      "image": "assets/images/formal_pointed_pumps.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Comfortable Wedges",
+      "category": "Casual",
+      "size": "US 7",
+      "color": "Navy",
+      "price": 59.99,
+      "image": "assets/images/comfortable_wedges.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Stylish High-Heel Boots",
+      "category": "Boots",
+      "size": "US 8",
+      "color": "Gray",
+      "price": 99.99,
+      "image": "assets/images/stylish_high_heel_boots.jpg"
+    }
+  ]
+}
