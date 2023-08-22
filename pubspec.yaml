@@ -94,6 +94,10 @@ flutter:
     - assets/images/Stylish High-Heel Boots.jpeg
     - assets/images/Suede Desert Boots.jpeg
     - assets/images/Urban Street Sneakers.jpeg
+    # Json files
+    - assets/data/kid_shoes.json
+    - assets/data/men_shoes.json
+    - assets/data/women_shoes.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
