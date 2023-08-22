@@ -1,94 +1,294 @@
 {
   "menShoes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Classic Leather Oxfords",
       "category": "Formal",
       "size": "US 9",
       "color": "Black",
-      "price": 79.99,
-      "image": "assets/images/Classic Leather Oxfords.jpeg"
+      "price": "79.99",
+      "image": "assets/images/Classic Leather Oxfords.jpeg",
+      "oldPrice": "89.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": true
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "An Oxford shoe is characterized by shoelace eyelets tabs that are attached under the vamp, a feature termed closed lacing. This contrasts with Derbys, or bluchers, which have shoelace eyelets attached to the top of the vamp."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Casual Canvas Sneakers",
       "category": "Casual",
       "size": "US 10",
       "color": "Navy",
-      "price": 49.99,
-      "image": "assets/images/Casual Canvas Sneakers.jpeg"
+      "price": "49.99",
+      "image": "assets/images/Casual Canvas Sneakers.jpeg",
+      "oldPrice": "59.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": true
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "A casual shoe is a shoe that is intended to be worn in informal situations such as at a barbeque, a picnic, or for gardening. Casual shoes are usually made of leather, rubber, or canvas."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Running Performance Shoes",
       "category": "Athletic",
       "size": "US 11",
       "color": "Gray",
-      "price": 89.99,
-      "image": "assets/images/Running Performance Shoes.jpeg"
+      "price": "89.99",
+      "image": "assets/images/Running Performance Shoes.jpeg",
+      "oldPrice": "99.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": true
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "Running shoes are designed to handle the shock of 2.5 times your body weight that is created by the impact each time your foot strikes the ground. When you're running, you want to have excellent cushioning in both the heel and forefoot to handle this impact."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Suede Desert Boots",
       "category": "Boots",
       "size": "US 9",
       "color": "Brown",
-      "price": 64.99,
-      "image": "assets/images/Suede Desert Boots.jpeg"
+      "price": "64.99",
+      "image": "assets/images/Suede Desert Boots.jpeg",
+      "oldPrice": "74.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": true
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "Desert boots are a style of chukka boot. They are a lace-up boot that is typically made from suede or leather. The distinguishing feature of desert boots is the crepe rubber sole, which is made from coagulated latex tapped from the Para rubber tree."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Slip-On Loafers",
       "category": "Casual",
       "size": "US 10",
       "color": "Tan",
-      "price": 54.99,
-      "image": "assets/images/Slip-On Loafers.jpeg"
+      "price": "54.99",
+      "image": "assets/images/Slip-On Loafers.jpeg",
+      "oldPrice": "64.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": true
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "A loafer is a laceless, low shoe. It is also known as a slip-on shoe. Loafers are an intermediate style between casual and formal. They are also sometimes called slippers."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Hiking Boots",
       "category": "Outdoor",
       "size": "US 10",
       "color": "Black",
-      "price": 74.99,
-      "image": "assets/images/Hiking Boots.jpeg"
+      "price": "74.99",
+      "image": "assets/images/Hiking Boots.jpeg",
+      "oldPrice": "84.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": true
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "Hiking boots are footwear specifically designed for protecting the feet and ankles during outdoor walking activities such as hiking. They are one of the most important items of hiking gear, since their quality and durability can determine a hiker's ability to walk long distances without injury."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Leather High-Tops",
       "category": "Casual",
       "size": "US 11",
       "color": "White",
-      "price": 69.99,
-      "image": "assets/images/Leather High-Tops.jpeg"
+      "price": "69.99",
+      "image": "assets/images/Leather High-Tops.jpeg",
+      "oldPrice": "79.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": true
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "High-top sneakers are a type of shoe that extends slightly over the wearer's ankle. It is commonly an athletic shoe, particularly for basketball. It is sometimes confused with the slightly shorter mid-top, which typically extends no higher than the wearer's ankle."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Formal Wingtip Brogues",
       "category": "Formal",
       "size": "US 9",
       "color": "Brown",
-      "price": 84.99,
-      "image": "assets/images/Formal Wingtip Brogues.jpeg"
+      "price": "84.99",
+      "image": "assets/images/Formal Wingtip Brogues.jpeg",
+      "oldPrice": "94.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": true
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "Brogues are a style of low-heeled shoe or boot traditionally characterised by multiple-piece, sturdy leather uppers with decorative perforations and serration along the pieces' visible edges."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Business Penny Loafers",
       "category": "Formal",
       "size": "US 10",
       "color": "Black",
-      "price": 94.99,
-      "image": "assets/images/Business Penny Loafers.jpeg"
+      "price": "94.99",
+      "image": "assets/images/Business Penny Loafers.jpeg",
+      "oldPrice": "104.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": true
+        },
+        {
+          "size": "US 11",
+          "selected": false
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "A penny loafer is a loafer shoe with a distinctive strap, traditionally with a diamond-shaped cutout known as a 'beefroll', across the vamp. Such a shoe was first manufactured in 1930 in America, the name being American in origin."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Urban Street Sneakers",
       "category": "Casual",
       "size": "US 11",
       "color": "Red",
-      "price": 59.99,
-      "image": "assets/images/Urban Street Sneakers.jpeg"
+      "price": "59.99",
+      "image": "assets/images/Urban Street Sneakers.jpeg",
+      "oldPrice": "69.99",
+      "sizes": [
+        {
+          "size": "US 9",
+          "selected": false
+        },
+        {
+          "size": "US 10",
+          "selected": false
+        },
+        {
+          "size": "US 11",
+          "selected": true
+        },
+        {
+          "size": "US 12",
+          "selected": false
+        }
+      ],
+      "description": "Sneakers are shoes primarily designed for sports or other forms of physical exercise but that are now also widely used for everyday casual wear. They are also known as trainers in British English, gym shoes, sport shoes, sneakers, runners, or trainers in Hiberno-English."
     }
   ]
 }

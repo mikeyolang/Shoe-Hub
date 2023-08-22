@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shoehub/shared/appstyle.dart' as style;
 
 import 'package:community_material_icon/community_material_icon.dart';
+import 'package:shoehub/shared/product_card.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -84,15 +85,12 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                           height: MediaQuery.of(context).size.height * 0.405,
                           child: ListView.builder(
                             itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  color: Colors.grey[200],
-                                  height: MediaQuery.of(context).size.height,
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.6,
-                                ),
-                              );
+                              return const ProductCard(
+                                  price: "\$ 12.00",
+                                  name: "Sneakers",
+                                  category: "male Shoes",
+                                  image: "asssets/images/imae1",
+                                  id: "s1");
                             },
                             itemCount: 6,
                             scrollDirection: Axis.horizontal,
@@ -137,6 +135,14 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
                                   decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        spreadRadius: 1,
+                                        blurRadius: 5,
+                                        offset: const Offset(0, 3),
+                                      ),
+                                    ],
                                     color: Colors.grey[500],
                                     borderRadius: BorderRadius.circular(15),
                                   ),
