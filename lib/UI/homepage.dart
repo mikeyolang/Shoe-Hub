@@ -113,7 +113,7 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                                   Row(
                                     children: [
                                       Text(
-                                        "View All",
+                                        "Show All",
                                         style: style.appstyle(
                                             16, Colors.black, FontWeight.w400),
                                       ),
