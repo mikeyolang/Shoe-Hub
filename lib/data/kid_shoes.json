@@ -7,7 +7,7 @@
       "size": "US 5",
       "color": "Pink",
       "price": 29.99,
-      "image": "assets/images/sparkle_sneakers.jpg"
+      "image": "assets/images/Sparkle Sneakers.jpeg"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "size": "US 6",
       "color": "Blue",
       "price": 19.99,
-      "image": "assets/images/adventure_sandals.jpg"
+      "image": "assets/images/Adventure Sandals.jpeg"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "size": "US 4",
       "color": "White",
       "price": 39.99,
-      "image": "assets/images/light_up_trainers.jpg"
+      "image": "assets/images/Light-Up Trainers.jpeg"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "size": "US 7",
       "color": "Multicolor",
       "price": 24.99,
-      "image": "assets/images/rainbow_slip_ons.jpg"
+      "image": "assets/images/Rainbow Slip-Ons.jpeg"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "size": "US 5",
       "color": "Black",
       "price": 34.99,
-      "image": "assets/images/sporty_velcro_shoes.jpg"
+      "image": "assets/images/Sporty Velcro Shoes.jpeg"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "size": "US 8",
       "color": "Pink",
       "price": 27.99,
-      "image": "assets/images/floral_mary_janes.jpg"
+      "image": "assets/images/Floral Mary Janes.jpeg"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "size": "US 7",
       "color": "Green",
       "price": 32.99,
-      "image": "assets/images/dino_print_boots.jpg"
+      "image": "assets/images/Dino Print Boots.jpeg"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "size": "US 6",
       "color": "Black",
       "price": 42.99,
-      "image": "assets/images/glow_in_the_dark_high_tops.jpg"
+      "image": "assets/images/Glow-in-the-Dark High-Tops.jpeg"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "size": "US 4",
       "color": "Yellow",
       "price": 21.99,
-      "image": "assets/images/rainy_day_galoshes.jpg"
+      "image": "assets/images/Rainy Day Galoshes.jpeg"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "size": "US 3",
       "color": "Purple",
       "price": 14.99,
-      "image": "assets/images/comfy_slipper_socks.jpg"
+      "image": "assets/images/Comfy Slipper Socks.jpeg"
     }
   ]
 }

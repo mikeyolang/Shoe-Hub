@@ -7,7 +7,7 @@
       "size": "US 9",
       "color": "Black",
       "price": 79.99,
-      "image": "assets/images/classic_leather_oxfords.jpg"
+      "image": "assets/images/Classic Leather Oxfords.jpeg"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "size": "US 10",
       "color": "Navy",
       "price": 49.99,
-      "image": "assets/images/casual_canvas_sneakers.jpg"
+      "image": "assets/images/Casual Canvas Sneakers.jpeg"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "size": "US 11",
       "color": "Gray",
       "price": 89.99,
-      "image": "assets/images/running_performance_shoes.jpg"
+      "image": "assets/images/Running Performance Shoes.jpeg"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "size": "US 9",
       "color": "Brown",
       "price": 64.99,
-      "image": "assets/images/suede_desert_boots.jpg"
+      "image": "assets/images/Suede Desert Boots.jpeg"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "size": "US 10",
       "color": "Tan",
       "price": 54.99,
-      "image": "assets/images/slip_on_loafers.jpg"
+      "image": "assets/images/Slip-On Loafers.jpeg"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "size": "US 10",
       "color": "Black",
       "price": 74.99,
-      "image": "assets/images/hiking_boots.jpg"
+      "image": "assets/images/Hiking Boots.jpeg"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "size": "US 11",
       "color": "White",
       "price": 69.99,
-      "image": "assets/images/leather_high_tops.jpg"
+      "image": "assets/images/Leather High-Tops.jpeg"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "size": "US 9",
       "color": "Brown",
       "price": 84.99,
-      "image": "assets/images/formal_wingtip_brogues.jpg"
+      "image": "assets/images/Formal Wingtip Brogues.jpeg"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "size": "US 10",
       "color": "Black",
       "price": 94.99,
-      "image": "assets/images/business_penny_loafers.jpg"
+      "image": "assets/images/Business Penny Loafers.jpeg"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "size": "US 11",
       "color": "Red",
       "price": 59.99,
-      "image": "assets/images/urban_street_sneakers.jpg"
+      "image": "assets/images/Urban Street Sneakers.jpeg"
     }
   ]
 }

@@ -64,7 +64,36 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/backbackground.jpg
-  #   - images/a_dot_ham.jpeg
+    - assets/images/Adventure Sandals.jpeg
+    - assets/images/Athletic Running Shoes.jpeg
+    - assets/images/Business Penny Loafers.jpeg
+    - assets/images/Casual Canvas Sneakers.jpeg
+    - assets/images/Casual Slip-On Sneakers.jpeg
+    - assets/images/Chic Ankle Boots.jpeg
+    - assets/images/Classic Ballet Flats.jpeg
+    - assets/images/Classic Leather Oxfords.jpeg
+    - assets/images/Comfortable Wedges.jpeg
+    - assets/images/Comfy Slipper Socks.jpeg
+    - assets/images/Dino Print Boots.jpeg
+    - assets/images/Elegant Heeled Sandals.jpeg
+    - assets/images/Floral Mary Janes.jpeg
+    - assets/images/Formal Pointed Pumps.jpeg
+    - assets/images/Formal Wingtip Brogues.jpeg
+    - assets/images/Glow-in-the-Dark High-Tops.jpeg
+    - assets/images/Hiking Boots.jpeg
+    - assets/images/Leather High-Tops.jpeg
+    - assets/images/Light-Up Trainers.jpeg
+    - assets/images/Outdoor Hiking Boots.jpeg
+    - assets/images/Platform Sneakers.jpeg
+    - assets/images/Rainbow Slip-Ons.jpeg
+    - assets/images/Rainy Day Galoshes.jpeg
+    - assets/images/Running Performance Shoes.jpeg
+    - assets/images/Slip-On Loafers.jpeg
+    - assets/images/Sparkle Sneakers.jpeg
+    - assets/images/Sporty Velcro Shoes.jpeg
+    - assets/images/Stylish High-Heel Boots.jpeg
+    - assets/images/Suede Desert Boots.jpeg
+    - assets/images/Urban Street Sneakers.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

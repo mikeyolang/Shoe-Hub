@@ -7,7 +7,7 @@
       "size": "US 7",
       "color": "Silver",
       "price": 89.99,
-      "image": "assets/images/elegant_heeled_sandals.jpg"
+      "image": "assets/images/Elegant Heeled Sandals.jpeg"
     },
     
     {
@@ -17,7 +17,7 @@
       "size": "US 8",
       "color": "White",
       "price": 54.99,
-      "image": "assets/images/casual_slip_on_sneakers.jpg"
+      "image": "assets/images/Casual Slip-On Sneakers.jpeg"
     },
     {
       "id": 3,
@@ -26,7 +26,7 @@
       "size": "US 7",
       "color": "Pink",
       "price": 79.99,
-      "image": "assets/images/athletic_running_shoes.jpg"
+      "image": "assets/images/Athletic Running Shoes.jpeg"
     },
     {
       "id": 4,
@@ -35,7 +35,7 @@
       "size": "US 8",
       "color": "Black",
       "price": 69.99,
-      "image": "assets/images/chic_ankle_boots.jpg"
+      "image": "assets/images/Chic Ankle Boots.jpeg"
     },
     {
       "id": 5,
@@ -44,7 +44,7 @@
       "size": "US 7",
       "color": "Beige",
       "price": 39.99,
-      "image": "assets/images/classic_ballet_flats.jpg"
+      "image": "assets/images/Classic Ballet Flats.jpeg"
     },
     {
       "id": 6,
@@ -53,7 +53,7 @@
       "size": "US 8",
       "color": "Brown",
       "price": 89.99,
-      "image": "assets/images/outdoor_hiking_boots.jpg"
+      "image": "assets/images/Outdoor Hiking Boots.jpeg"
     },
     {
       "id": 7,
@@ -62,7 +62,7 @@
       "size": "US 7",
       "color": "Black",
       "price": 64.99,
-      "image": "assets/images/platform_sneakers.jpg"
+      "image": "assets/images/Platform Sneakers.jpeg"
     },
     {
       "id": 8,
@@ -71,7 +71,7 @@
       "size": "US 8",
       "color": "Red",
       "price": 74.99,
-      "image": "assets/images/formal_pointed_pumps.jpg"
+      "image": "assets/images/Formal Pointed Pumps.jpeg"
     },
     {
       "id": 9,
@@ -80,7 +80,7 @@
       "size": "US 7",
       "color": "Navy",
       "price": 59.99,
-      "image": "assets/images/comfortable_wedges.jpg"
+      "image": "assets/images/Comfortable Wedges.jpeg"
     },
     {
       "id": 10,
@@ -89,7 +89,7 @@
       "size": "US 8",
       "color": "Gray",
       "price": 99.99,
-      "image": "assets/images/stylish_high_heel_boots.jpg"
+      "image": "assets/images/Stylish High-Heel Boots.jpeg"
     }
   ]
 }
