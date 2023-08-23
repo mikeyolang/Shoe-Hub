@@ -2,6 +2,7 @@ import 'dart:convert';
 
 Sneakers sneakersFromJson(String str) => Sneakers.fromJson(json.decode(str));
 
+
 class Sneakers {
   final String id;
   final String name;
@@ -39,6 +40,8 @@ class Sneakers {
         sizes: List<dynamic>.from(json["sizes"].map((x) => x)),
         description: json["description"],
       );
+
+  firstWhere(bool Function(dynamic element) param0) {}
 
   
 }

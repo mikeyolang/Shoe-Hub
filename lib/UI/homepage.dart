@@ -1,8 +1,11 @@
+import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
+
+import 'package:shoehub/models/sneaker_model.dart';
 import 'package:shoehub/shared/appstyle.dart' as style;
 
-import 'package:community_material_icon/community_material_icon.dart';
-import 'package:shoehub/shared/product_card.dart';
+import '../services/helper.dart';
+import '../shared/home_widget.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -14,6 +17,34 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
   late final TabController _tabController =
       TabController(length: 3, vsync: this);
+
+  // Getting the data of the sneakers
+  late Future<List<Sneakers>> _maleSneakers;
+
+  void getMale() {
+    _maleSneakers = SneakerService().getMaleSneakers();
+  }
+
+  late Future<List<Sneakers>> _femaleSneakers;
+
+  void getFemale() {
+    _femaleSneakers = SneakerService().getFemaleSneakers();
+  }
+
+  late Future<List<Sneakers>> _kidSneakers;
+
+  void getKid() {
+    _kidSneakers = SneakerService().getKidsSneakers();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getMale();
+    getFemale();
+    getKid();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,87 +110,9 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    Column(
-                      children: [
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.405,
-                          child: ListView.builder(
-                            itemBuilder: (context, index) {
-                              return const ProductCard(
-                                  price: "\$ 12.00",
-                                  name: "Sneakers",
-                                  category: "male Shoes",
-                                  image: "asssets/images/imae1",
-                                  id: "s1");
-                            },
-                            itemCount: 6,
-                            scrollDirection: Axis.horizontal,
-                          ),
-                        ),
-                        Column(
-                          children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(12, 20, 12, 20),
-                              child: Row(
-                                children: [
-                                  Text(
-                                    "Latest Shoes",
-                                    style: style.appstyle(
-                                        24, Colors.black, FontWeight.bold),
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Show All",
-                                        style: style.appstyle(
-                                            16, Colors.black, FontWeight.w400),
-                                      ),
-                                      const Icon(
-                                        CommunityMaterialIcons
-                                            .arrow_right_drop_circle,
-                                        size: 16,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.13,
-                          child: ListView.builder(
-                            itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(0.5),
-                                        spreadRadius: 1,
-                                        blurRadius: 5,
-                                        offset: const Offset(0, 3),
-                                      ),
-                                    ],
-                                    color: Colors.grey[500],
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  color: Colors.grey[700],
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.12,
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.18,
-                                ),
-                              );
-                            },
-                            itemCount: 6,
-                            scrollDirection: Axis.horizontal,
-                          ),
-                        ),
-                      ],
-                    ),
+                    HomepageWidget(maleSneakers: _maleSneakers),
+                    HomepageWidget(maleSneakers: _femaleSneakers),
+                    HomepageWidget(maleSneakers: _femaleSneakers),
                   ],
                 ),
               ),
