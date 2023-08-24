@@ -47,6 +47,13 @@ class _ProductByCategoryState extends State<ProductByCategory>
     getKid();
   }
 
+  List<String> brand = [
+    "assets/images/brandLogos/addidas.png",
+    "assets/images/brandLogos/jordan.png",
+    "assets/images/brandLogos/luois.png",
+    "assets/images/brandLogos/nike.png",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,6 +148,7 @@ class _ProductByCategoryState extends State<ProductByCategory>
   }
 
   Future<dynamic> filter() {
+    double currentSliderValue = 100;
     return showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -208,24 +216,79 @@ class _ProductByCategoryState extends State<ProductByCategory>
                       const SizedBox(
                         height: 20,
                       ),
-                      const Row(
+                      Row(
                         children: [
-                          CategoryButton(
+                          const CategoryButton(
                             label: "Shoes",
                             buttonColor: Colors.black,
                           ),
-                          CategoryButton(
+                          const CategoryButton(
                             label: "Apparels",
                             buttonColor: Colors.grey,
                           ),
-                          CategoryButton(
+                          const CategoryButton(
                             label: "Accessories",
                             buttonColor: Colors.grey,
                           ),
+                          const CustomSpacer(),
+                          Text(
+                            "Price",
+                            style: style.appstyle(
+                              20,
+                              Colors.black,
+                              FontWeight.bold,
+                            ),
+                          ),
+                          Slider(
+                            value: currentSliderValue,
+                            activeColor: Colors.black,
+                            inactiveColor: Colors.grey,
+                            thumbColor: Colors.black,
+                            max: 100,
+                            divisions: 50,
+                            label: currentSliderValue.round().toString(),
+                            secondaryTrackValue: 200,
+                            onChanged: (double value) {},
+                          ),
+                          const CustomSpacer(),
+                          Text(
+                            "Brands",
+                            style: style.appstyle(
+                                20, Colors.black, FontWeight.bold),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(8),
+                            height: 80,
+                            child: ListView.builder(
+                                itemCount: brand.length,
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (context, index) {
+                                  return Padding(
+                                    padding: const EdgeInsets.all(12),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[300],
+                                        borderRadius: const BorderRadius.all(
+                                          Radius.circular(15),
+                                        ),
+                                      ),
+                                      child: Image.asset(
+                                        brand[index],
+                                        height: 50,
+                                        width: 80,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  );
+                                }),
+                          ),
                         ],
-                      )
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
