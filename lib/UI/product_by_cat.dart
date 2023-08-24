@@ -1,6 +1,14 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shoehub/shared/appstyle.dart' as style;
+import 'package:shoehub/shared/category_button.dart';
+import 'package:shoehub/shared/custom_spacer.dart';
+
+import '../models/sneaker_model.dart';
+import '../services/helper.dart';
+import '../shared/latest_shoes.dart';
 
 class ProductByCategory extends StatefulWidget {
   const ProductByCategory({super.key});
@@ -13,6 +21,32 @@ class _ProductByCategoryState extends State<ProductByCategory>
     with TickerProviderStateMixin {
   late final TabController _tabController =
       TabController(length: 3, vsync: this);
+  late Future<List<Sneakers>> _maleSneakers;
+
+  void getMale() {
+    _maleSneakers = SneakerService().getMaleSneakers();
+  }
+
+  late Future<List<Sneakers>> _femaleSneakers;
+
+  void getFemale() {
+    _femaleSneakers = SneakerService().getFemaleSneakers();
+  }
+
+  late Future<List<Sneakers>> _kidSneakers;
+
+  void getKid() {
+    _kidSneakers = SneakerService().getKidsSneakers();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getMale();
+    getFemale();
+    getKid();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +83,9 @@ class _ProductByCategoryState extends State<ProductByCategory>
                           ),
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            filter();
+                          },
                           child: const Icon(
                             FontAwesomeIcons.sliders,
                             color: Colors.white,
@@ -81,28 +117,116 @@ class _ProductByCategoryState extends State<ProductByCategory>
                 ],
               ),
             ),
-            
             Padding(
-              padding:  EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.265, left: 16, right: 12),
-              child: TabBarView(
-                controller: _tabController,
+              padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.265,
+                  left: 16,
+                  right: 12),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    LatestShoes(maleSneakers: _maleSneakers),
+                    LatestShoes(maleSneakers: _femaleSneakers),
+                    LatestShoes(maleSneakers: _kidSneakers),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<dynamic> filter() {
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      barrierColor: Colors.white54,
+      builder: (context) => Container(
+        height: MediaQuery.of(context).size.height * 0.82,
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(25),
+            topRight: Radius.circular(125),
+          ),
+        ),
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 5,
+              width: 40,
+              decoration: BoxDecoration(
+                color: Colors.black38,
+                borderRadius: BorderRadius.circular(5),
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.7,
+              child: Column(
                 children: [
-               Container(
-                height: 500,
-                width: 500,
-                color: Colors.red,
-               ),
-               Container(
-                height: 500,
-                width: 500,
-                color: Colors.blue,
-               ),
-               Container(
-                height: 500,
-                width: 500,
-                color: Colors.green,
-               ),
-              ]
+                  const CustomSpacer(),
+                  Text(
+                    "Filet",
+                    style: style.appstyle(40, Colors.black, FontWeight.bold),
+                  ),
+                  const CustomSpacer(),
+                  Text(
+                    "Gender",
+                    style: style.appstyle(20, Colors.black, FontWeight.bold),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const CategoryButton(
+                        label: "Men",
+                        buttonColor: Colors.black,
+                      ),
+                      const CategoryButton(
+                        label: "Female",
+                        buttonColor: Colors.grey,
+                      ),
+                      const CategoryButton(
+                        label: "Kids",
+                        buttonColor: Colors.grey,
+                      ),
+                      const CustomSpacer(),
+                      Text(
+                        "Category",
+                        style:
+                            style.appstyle(20, Colors.black, FontWeight.bold),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Row(
+                        children: [
+                          CategoryButton(
+                            label: "Shoes",
+                            buttonColor: Colors.black,
+                          ),
+                          CategoryButton(
+                            label: "Apparels",
+                            buttonColor: Colors.grey,
+                          ),
+                          CategoryButton(
+                            label: "Accessories",
+                            buttonColor: Colors.grey,
+                          ),
+                        ],
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
           ],
