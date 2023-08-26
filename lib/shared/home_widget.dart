@@ -1,7 +1,5 @@
-
-
-
 import 'package:flutter/material.dart';
+import 'package:shoehub/UI/product_by_cat.dart';
 import 'package:shoehub/shared/new_shoes.dart';
 import 'package:shoehub/shared/product_card.dart';
 import 'package:community_material_icon/community_material_icon.dart';
@@ -50,26 +48,36 @@ class HomepageWidget extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(12, 20, 12, 20),
-              child: Row(
-                children: [
-                  Text(
-                    "Latest Shoes",
-                    style: style.appstyle(24, Colors.black, FontWeight.bold),
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        "Show All",
-                        style:
-                            style.appstyle(16, Colors.black, FontWeight.w400),
-                      ),
-                      const Icon(
-                        CommunityMaterialIcons.arrow_right_drop_circle,
-                        size: 16,
-                      ),
-                    ],
-                  ),
-                ],
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ProductByCategory(),
+                    ),
+                  );
+                },
+                child: Row(
+                  children: [
+                    Text(
+                      "Latest Shoes",
+                      style: style.appstyle(24, Colors.black, FontWeight.bold),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Show All",
+                          style:
+                              style.appstyle(16, Colors.black, FontWeight.w400),
+                        ),
+                        const Icon(
+                          CommunityMaterialIcons.arrow_right_drop_circle,
+                          size: 16,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             )
           ],

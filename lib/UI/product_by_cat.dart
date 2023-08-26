@@ -11,7 +11,8 @@ import '../services/helper.dart';
 import '../shared/latest_shoes.dart';
 
 class ProductByCategory extends StatefulWidget {
-  const ProductByCategory({super.key});
+  const ProductByCategory({super.key, required this.tabIndex});
+  final int tabIndex;
 
   @override
   State<ProductByCategory> createState() => _ProductByCategoryState();
@@ -134,9 +135,15 @@ class _ProductByCategoryState extends State<ProductByCategory>
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    LatestShoes(maleSneakers: _maleSneakers),
-                    LatestShoes(maleSneakers: _femaleSneakers),
-                    LatestShoes(maleSneakers: _kidSneakers),
+                    LatestShoes(
+                      maleSneakers: _maleSneakers,
+                    ),
+                    LatestShoes(
+                      maleSneakers: _femaleSneakers,
+                    ),
+                    LatestShoes(
+                      maleSneakers: _kidSneakers,
+                    ),
                   ],
                 ),
               ),
