@@ -110,9 +110,18 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    HomepageWidget(maleSneakers: _maleSneakers),
-                    HomepageWidget(maleSneakers: _femaleSneakers),
-                    HomepageWidget(maleSneakers: _femaleSneakers),
+                    HomepageWidget(
+                      maleSneakers: _maleSneakers,
+                      tabIndex: 0,
+                    ),
+                    HomepageWidget(
+                      maleSneakers: _femaleSneakers,
+                      tabIndex: 1,
+                    ),
+                    HomepageWidget(
+                      maleSneakers: _femaleSneakers,
+                      tabIndex: 2,
+                    ),
                   ],
                 ),
               ),

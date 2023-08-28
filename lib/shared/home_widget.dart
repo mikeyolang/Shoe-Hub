@@ -9,10 +9,11 @@ import '../shared/appstyle.dart' as style;
 class HomepageWidget extends StatelessWidget {
   const HomepageWidget({
     super.key,
-    required Future<List<Sneakers>> maleSneakers,
+    required Future<List<Sneakers>> maleSneakers, required this.tabIndex,
   }) : _maleSneakers = maleSneakers;
 
   final Future<List<Sneakers>> _maleSneakers;
+  final int tabIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +54,9 @@ class HomepageWidget extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ProductByCategory(),
+                      builder: (context) =>  ProductByCategory(
+                        tabIndex: tabIndex,
+                      ),
                     ),
                   );
                 },
