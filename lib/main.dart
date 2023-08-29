@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
+
 import 'package:shoehub/controllers/mainscreen_controllers.dart';
 
 import 'controllers/product_controller.dart';
 import 'main_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Hive.initFlutter();
+  await Hive.openBox("cart");
+  await Hive.openBox("cart_box");
+
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(
       create: (context) => MainscreenNotifier(),

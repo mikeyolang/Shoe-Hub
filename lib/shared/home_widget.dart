@@ -4,6 +4,8 @@ import 'package:shoehub/UI/product_page.dart';
 import 'package:shoehub/shared/new_shoes.dart';
 import 'package:shoehub/shared/product_card.dart';
 import 'package:community_material_icon/community_material_icon.dart';
+import 'package:provider/provider.dart';
+import '../controllers/product_controller.dart';
 import '../models/sneaker_model.dart';
 import '../shared/appstyle.dart' as style;
 
@@ -19,6 +21,7 @@ class HomepageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var productNotifier = Provider.of<ProductNotifier>(context);
     return Column(
       children: [
         SizedBox(
@@ -36,6 +39,7 @@ class HomepageWidget extends StatelessWidget {
                         final shoe = snapshot.data![index];
                         return GestureDetector(
                           onTap: () {
+                            productNotifier.shoeSizes = shoe.sizes;
                             Navigator.push(
                               context,
                               MaterialPageRoute(
