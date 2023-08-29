@@ -2,7 +2,6 @@ import 'dart:convert';
 
 Sneakers sneakersFromJson(String str) => Sneakers.fromJson(json.decode(str));
 
-
 class Sneakers {
   final String id;
   final String name;
@@ -42,6 +41,4 @@ class Sneakers {
       );
 
   firstWhere(bool Function(dynamic element) param0) {}
-
-  
 }

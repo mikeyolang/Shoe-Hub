@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoehub/UI/product_by_cat.dart';
+import 'package:shoehub/UI/product_page.dart';
 import 'package:shoehub/shared/new_shoes.dart';
 import 'package:shoehub/shared/product_card.dart';
 import 'package:community_material_icon/community_material_icon.dart';
@@ -9,7 +10,8 @@ import '../shared/appstyle.dart' as style;
 class HomepageWidget extends StatelessWidget {
   const HomepageWidget({
     super.key,
-    required Future<List<Sneakers>> maleSneakers, required this.tabIndex,
+    required Future<List<Sneakers>> maleSneakers,
+    required this.tabIndex,
   }) : _maleSneakers = maleSneakers;
 
   final Future<List<Sneakers>> _maleSneakers;
@@ -32,12 +34,25 @@ class HomepageWidget extends StatelessWidget {
                     return ListView.builder(
                       itemBuilder: (context, index) {
                         final shoe = snapshot.data![index];
-                        return ProductCard(
-                          price: "\$ ${shoe.price}",
-                          name: shoe.name,
-                          image: shoe.image,
-                          category: shoe.category,
-                          id: shoe.id,
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ProductPage(
+                                  id: shoe.id,
+                                  category: shoe.category,
+                                ),
+                              ),
+                            );
+                          },
+                          child: ProductCard(
+                            price: "\$ ${shoe.price}",
+                            name: shoe.name,
+                            image: shoe.image,
+                            category: shoe.category,
+                            id: shoe.id,
+                          ),
                         );
                       },
                       itemCount: snapshot.data!.length,
@@ -54,7 +69,7 @@ class HomepageWidget extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>  ProductByCategory(
+                      builder: (context) => ProductByCategory(
                         tabIndex: tabIndex,
                       ),
                     ),
