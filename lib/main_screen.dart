@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:shoehub/UI/cartpage.dart';
+import 'package:shoehub/UI/favorites.dart';
 import 'package:shoehub/UI/homepage.dart';
 import 'package:shoehub/UI/profile.dart';
 import 'package:shoehub/UI/searchpage.dart';
@@ -14,12 +15,12 @@ class MainScreen extends StatelessWidget {
   MainScreen({super.key, required this.title});
   final String title;
 
-  List<Widget> pageList = const [
-    Homepage(),
-    SearchPages(),
-    Homepage(),
+  List<Widget> pageList = [
+    const Homepage(),
+    const SearchPages(),
+    const Favorites(),
     CartPage(),
-    ProfilePage(),
+    const ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {

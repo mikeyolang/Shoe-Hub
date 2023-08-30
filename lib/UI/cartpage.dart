@@ -3,6 +3,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hive/hive.dart';
 import 'package:shoehub/shared/appstyle.dart';
+import 'package:shoehub/shared/checkout_button.dart';
 
 class CartPage extends StatelessWidget {
   CartPage({super.key});
@@ -64,7 +65,9 @@ class CartPage extends StatelessWidget {
                               motion: const ScrollMotion(),
                               children: [
                                 SlidableAction(
-                                  onPressed: doNothing,
+                                  onPressed: (value){
+                                    _cartBox.delete(data["id"]);
+                                  },
                                   foregroundColor: Colors.white,
                                   label: "Delete",
                                   backgroundColor: Colors.red,
@@ -129,13 +132,28 @@ class CartPage extends StatelessWidget {
                                           const SizedBox(
                                             height: 5,
                                           ),
-                                          Text(
-                                            data["price"],
-                                            style: appstyle(
-                                              15,
-                                              Colors.black,
-                                              FontWeight.w500,
-                                            ),
+                                          Row(
+                                            children: [
+                                              Text(
+                                                "\$${data["price"]}",
+                                                style: appstyle(
+                                                  15,
+                                                  Colors.black,
+                                                  FontWeight.w500,
+                                                ),
+                                              ),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              Text(
+                                                "Size: ${data["size"]}",
+                                                style: appstyle(
+                                                  15,
+                                                  Colors.black,
+                                                  FontWeight.w500,
+                                                ),
+                                              ),
+                                            ],
                                           ),
                                         ],
                                       ),
@@ -152,6 +170,13 @@ class CartPage extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          const Padding(
+            padding: EdgeInsets.all(12),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: CheckoutButton(label: "Proceed to Checkout"),
+            ),
           ),
         ],
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:community_material_icon/community_material_icon.dart';
+import 'package:hive/hive.dart';
 import 'package:shoehub/shared/appstyle.dart' as style;
 
 class ProductCard extends StatefulWidget {
@@ -22,6 +23,22 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard> {
+  final _favoriteBox = Hive.box("favorite_box");
+
+  Future<void> _createFavorite(Map<String, dynamic> addFav) async {
+    await _favoriteBox.add(addFav);
+  }
+
+  getFavorites() {
+    final favData = _favoriteBox.keys.map((key) {
+      final item = _favoriteBox.get(key);
+      return {
+        "key": key,
+        "id": "id",
+      };
+    }).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     bool selected = false;
