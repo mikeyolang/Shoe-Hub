@@ -115,6 +115,28 @@ class CartPage extends StatelessWidget {
                                               FontWeight.w500,
                                             ),
                                           ),
+                                          const SizedBox(
+                                            height: 5,
+                                          ),
+                                          Text(
+                                            data["category"],
+                                            style: appstyle(
+                                              16,
+                                              Colors.black,
+                                              FontWeight.w500,
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 5,
+                                          ),
+                                          Text(
+                                            data["price"],
+                                            style: appstyle(
+                                              15,
+                                              Colors.black,
+                                              FontWeight.w500,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     )
